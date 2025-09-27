@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">provaapi</string>
+    <string name="title_search_country">🌍 Buscar País</string>
+    <string name="title_results">Resultados</string>
+    <string name="hint_country_example">Ex: Brazil, France, Japan...</string>
+    <string name="btn_search_country">🔎 Buscar País</string>
+    <string name="label_official_name">Nome Oficial:</string>
+    <string name="label_capital">Capital:</string>
+    <string name="label_population">População:</string>
+    <string name="label_region">Região/Sub-região:</string>
+    <string name="label_currencies">Moedas:</string>
+    <string name="label_languages">Idiomas:</string>
+    <string name="error_country_not_found">País não encontrado ou erro na rede.</string>
+</resources>

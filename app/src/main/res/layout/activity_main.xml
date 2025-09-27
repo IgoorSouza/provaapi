@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_search_country"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextCountryQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_country_example"
+            android:inputType="text"
+            android:padding="14dp"
+            android:background="@drawable/bg_input"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_search_country"
+            android:textSize="16sp"
+            android:padding="14dp"
+            android:backgroundTint="#03DAC6"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp"
+            android:stateListAnimator="@null"
+            android:translationZ="0dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_results"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/resultsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_card"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageViewFlag"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="16dp"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/textViewCommonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#BB86FC"
+                tools:text="Brasil"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewOfficialName"
+                style="@style/DetailTextStyle"
+                tools:text="Nome Oficial: República Federativa do Brasil"
+                android:text="@string/label_official_name"/>
+
+            <TextView
+                android:id="@+id/textViewCapital"
+                style="@style/DetailTextStyle"
+                tools:text="Capital: Brasília"
+                android:text="@string/label_capital"/>
+
+            <TextView
+                android:id="@+id/textViewPopulation"
+                style="@style/DetailTextStyle"
+                tools:text="População: 212.559.417"
+                android:text="@string/label_population"/>
+
+            <TextView
+                android:id="@+id/textViewRegion"
+                style="@style/DetailTextStyle"
+                tools:text="Região/Sub-região: Américas / América do Sul"
+                android:text="@string/label_region"/>
+
+            <TextView
+                android:id="@+id/textViewCurrencies"
+                style="@style/DetailTextStyle"
+                tools:text="Moedas: BRL (Real)"
+                android:text="@string/label_currencies"/>
+
+            <TextView
+                android:id="@+id/textViewLanguages"
+                style="@style/DetailTextStyle"
+                tools:text="Idiomas: Português"
+                android:text="@string/label_languages"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/error_country_not_found"
+            android:textColor="#CF6679"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>
